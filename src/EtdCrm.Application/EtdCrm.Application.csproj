@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>EtdCrm</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EtdCrm.Domain\EtdCrm.Domain.csproj" />
+    <ProjectReference Include="..\EtdCrm.Application.Contracts\EtdCrm.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="5.1.4" />
+    <PackageReference Include="Refit" Version="6.3.2" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Document\" />
+    <None Remove="RequestForm\" />
+    <None Remove="DocumentFile\YandexDisk\" />
+    <None Remove="Refit" />
+    <None Remove="Refit.HttpClientFactory" />
+    <None Remove="Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Document\" />
+    <Folder Include="RequestForm\" />
+    <Folder Include="DocumentFile\YandexDisk\" />
+    <Folder Include="Admin\" />
+  </ItemGroup>
+</Project>

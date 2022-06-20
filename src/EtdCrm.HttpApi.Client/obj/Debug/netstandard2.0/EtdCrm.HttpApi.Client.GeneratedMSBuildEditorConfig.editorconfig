@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = EtdCrm
+build_property.ProjectDir = /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/

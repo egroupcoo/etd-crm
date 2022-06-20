@@ -1,0 +1,15 @@
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.HttpApi.Client.deps.json
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.HttpApi.Client.dll
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.HttpApi.Client.pdb
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.Application.Contracts.dll
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.dll
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.Application.Contracts.pdb
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.pdb
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.csproj.AssemblyReference.cache
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.GeneratedMSBuildEditorConfig.editorconfig
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.AssemblyInfoInputs.cache
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.AssemblyInfo.cs
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.csproj.CoreCompileInputs.cache
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.csproj.CopyComplete
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.dll
+/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/obj/Debug/netstandard2.0/EtdCrm.HttpApi.Client.pdb

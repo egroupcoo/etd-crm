@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "adb69d6e-12c8-4f1d-a451-c2e47b885eb0",
+		"name": "YandexApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "2c185cdeccfa4ae5bb5aa1c9d7e8c7d5",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://oauth.yandex.com/token",
+					"protocol": "https",
+					"host": [
+						"oauth",
+						"yandex",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Folder",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Dev",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Dev"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File Create Url",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources/upload?path=Dev/testaaa.png",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Dev/testaaa.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/inanyalcin/Downloads/AdminLTE-3.2.0/dist/img/avatar2.png"
+					}
+				},
+				"url": {
+					"raw": "https://uploader36o.disk.yandex.net:443/upload-target/20220512T212925.515.utd.95itms78edvmk2fkqnkg1pg82-k36o.707839",
+					"protocol": "https",
+					"host": [
+						"uploader36o",
+						"disk",
+						"yandex",
+						"net"
+					],
+					"port": "443",
+					"path": [
+						"upload-target",
+						"20220512T212925.515.utd.95itms78edvmk2fkqnkg1pg82-k36o.707839"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Dev/test.txt&permanently=true",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Dev/test.txt"
+						},
+						{
+							"key": "permanently",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Folder",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Dev&permanently=true",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Dev"
+						},
+						{
+							"key": "permanently",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publish Url",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources/publish?path=Dev/testaaa.png",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Dev/testaaa.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publish File",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2FDev%2Ftestaaa.png",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "disk%3A%2FDev%2Ftestaaa.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources/files?limit=10&offset=0&fields=items.name,items.file,items.path",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources",
+						"files"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "fields",
+							"value": "items.name,items.file,items.path"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -11,3 +11,16 @@
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.csproj.CopyComplete
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.dll
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/bin/Debug/netstandard2.0/EtdCrm.Application.Contracts.deps.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/bin/Debug/netstandard2.0/EtdCrm.Application.Contracts.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/bin/Debug/netstandard2.0/EtdCrm.Application.Contracts.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.csproj.AssemblyReference.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.AssemblyInfoInputs.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.AssemblyInfo.cs
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.csproj.CoreCompileInputs.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.csproj.CopyComplete
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/obj/Debug/netstandard2.0/EtdCrm.Application.Contracts.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6gKgGZ99CnvCJtdmjhHGZ9coe1lkkzP0Rg6K8l57XHWIR/KhOVmzjF4RmLu4Y5nhCsYu+f/5tEW4MoyLC5K0Eg==",
+  "dgSpecHash": "05o2sAp/mTzk2BAP1Y+B2z20uMaLXrG0Rko9YyIzENy23VYOH4ZMSTU9zvygXmot9fkSLRuD2T8mgkgxU7FrOQ==",
   "success": true,
-  "projectFilePath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj",
+  "projectFilePath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj",
   "expectedPackageFiles": [
     "/Users/inanyalcin/.nuget/packages/jetbrains.annotations/2021.2.0/jetbrains.annotations.2021.2.0.nupkg.sha512",
     "/Users/inanyalcin/.nuget/packages/microsoft.aspnetcore.authorization/6.0.0/microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",

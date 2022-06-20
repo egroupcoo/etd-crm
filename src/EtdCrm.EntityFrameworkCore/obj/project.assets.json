@@ -7138,14 +7138,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
+      "projectUniqueName": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
       "projectName": "EtdCrm.EntityFrameworkCore",
-      "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
+      "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
       "packagesPath": "/Users/inanyalcin/.nuget/packages/",
-      "outputPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.EntityFrameworkCore/obj/",
+      "outputPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/inanyalcin/Documents/EtdCrm-Backend/NuGet.Config",
+        "/Users/inanyalcin/Documents/EGroup/etd-crm/NuGet.Config",
         "/Users/inanyalcin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -7159,8 +7159,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Domain/EtdCrm.Domain.csproj": {
-              "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Domain/EtdCrm.Domain.csproj"
+            "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj": {
+              "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj"
             }
           }
         }
@@ -7233,7 +7233,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

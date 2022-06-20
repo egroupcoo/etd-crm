@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W792oXVG7U9syNYwvRo1b3gS6sITscq6wueQ4k1rPrWt35VdEGUfTSw4cJJxz2RIzfLWu7tE0bNO738AjMbbJA==",
+  "dgSpecHash": "RRxpwLOzcKJadH3ekIZvTtooTj+pJS+3btDyFazxXXFNbMUDNOxM3Y7sm8wTNbjt18x4nzZsvEi87K2uTNjZ9w==",
   "success": true,
-  "projectFilePath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.DbMigrator/EtdCrm.DbMigrator.csproj",
+  "projectFilePath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.DbMigrator/EtdCrm.DbMigrator.csproj",
   "expectedPackageFiles": [
     "/Users/inanyalcin/.nuget/packages/autofac/6.3.0/autofac.6.3.0.nupkg.sha512",
     "/Users/inanyalcin/.nuget/packages/autofac.extensions.dependencyinjection/7.2.0/autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

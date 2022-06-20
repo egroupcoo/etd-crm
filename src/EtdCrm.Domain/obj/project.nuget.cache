@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tpq3RDYeCodf+M70Vt2HbHWeeekK6+iOaoxjknlKD2z1dPpIHDFttasis14VpbK6mRBBvJ3kRA439e2FKqY8fQ==",
+  "dgSpecHash": "7SoNVm7YKoFuHmgubQZm1ly7p/uUmsHtEwfE0uHXRzjHr9rivp0seQBEWQjGQf+Q+qiXehOodEAStCn7K4LVSQ==",
   "success": true,
-  "projectFilePath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Domain/EtdCrm.Domain.csproj",
+  "projectFilePath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj",
   "expectedPackageFiles": [
     "/Users/inanyalcin/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/inanyalcin/.nuget/packages/identitymodel/4.4.0/identitymodel.4.4.0.nupkg.sha512",

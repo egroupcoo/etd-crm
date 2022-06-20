@@ -9,3 +9,14 @@
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.csproj.CoreCompileInputs.cache
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.dll
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.deps.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/bin/Debug/netstandard2.0/EtdCrm.Domain.Shared.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.csproj.AssemblyReference.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.EmbeddedFilesManifest.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.AssemblyInfoInputs.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.AssemblyInfo.cs
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.csproj.CoreCompileInputs.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain.Shared/obj/Debug/netstandard2.0/EtdCrm.Domain.Shared.pdb

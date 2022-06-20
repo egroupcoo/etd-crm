@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RmlfeAKKjO5Ige+oRMAXs3BM/54suksEiqgIf9duE7k2cbbTj4tQ2/KgSKhaxRScEMBaqtCndaH72TOmfwiCCg==",
+  "dgSpecHash": "f8AJI5fVm1RmaCpv4Ikn//rpR6+ctMVUeOy0Fw1XMUab1uA3bvyM6T+GkptWwrGVtpK4j+XBMur60vQcbsXRJw==",
   "success": true,
-  "projectFilePath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/EtdCrm.HttpApi.Client.csproj",
+  "projectFilePath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Client/EtdCrm.HttpApi.Client.csproj",
   "expectedPackageFiles": [
     "/Users/inanyalcin/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
     "/Users/inanyalcin/.nuget/packages/castle.core.asyncinterceptor/2.0.0/castle.core.asyncinterceptor.2.0.0.nupkg.sha512",

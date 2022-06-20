@@ -6104,14 +6104,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi/EtdCrm.HttpApi.csproj",
+      "projectUniqueName": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi/EtdCrm.HttpApi.csproj",
       "projectName": "EtdCrm.HttpApi",
-      "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi/EtdCrm.HttpApi.csproj",
+      "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi/EtdCrm.HttpApi.csproj",
       "packagesPath": "/Users/inanyalcin/.nuget/packages/",
-      "outputPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi/obj/",
+      "outputPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/inanyalcin/Documents/EtdCrm-Backend/NuGet.Config",
+        "/Users/inanyalcin/Documents/EGroup/etd-crm/NuGet.Config",
         "/Users/inanyalcin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -6125,8 +6125,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj": {
-              "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj"
+            "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj": {
+              "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj"
             }
           }
         }
@@ -6181,7 +6181,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

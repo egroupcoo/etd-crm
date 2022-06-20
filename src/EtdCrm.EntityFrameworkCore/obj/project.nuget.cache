@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZfHPV3sfONMvt1QniGk8QziEEr8SZFMRclMVUXvEfsLFqhJgBW7pJabo8i9IKO4ML8acjpPaqXqwsZLkB3bPnA==",
+  "dgSpecHash": "TzUwNB0D3zT5UkjIoGbxtwo1CiPbUdlLaX2mQfZEH7FqUziKObSqtGGduFyomcUF7PM1FQ9OtFnjNZ2qdzMoTw==",
   "success": true,
-  "projectFilePath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
+  "projectFilePath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
   "expectedPackageFiles": [
     "/Users/inanyalcin/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/inanyalcin/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

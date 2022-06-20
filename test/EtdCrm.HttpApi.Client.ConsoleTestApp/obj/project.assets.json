@@ -9153,14 +9153,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.HttpApi.Client.ConsoleTestApp/EtdCrm.HttpApi.Client.ConsoleTestApp.csproj",
+      "projectUniqueName": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.HttpApi.Client.ConsoleTestApp/EtdCrm.HttpApi.Client.ConsoleTestApp.csproj",
       "projectName": "EtdCrm.HttpApi.Client.ConsoleTestApp",
-      "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.HttpApi.Client.ConsoleTestApp/EtdCrm.HttpApi.Client.ConsoleTestApp.csproj",
+      "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.HttpApi.Client.ConsoleTestApp/EtdCrm.HttpApi.Client.ConsoleTestApp.csproj",
       "packagesPath": "/Users/inanyalcin/.nuget/packages/",
-      "outputPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.HttpApi.Client.ConsoleTestApp/obj/",
+      "outputPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.HttpApi.Client.ConsoleTestApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/inanyalcin/Documents/EtdCrm-Backend/NuGet.Config",
+        "/Users/inanyalcin/Documents/EGroup/etd-crm/NuGet.Config",
         "/Users/inanyalcin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -9174,8 +9174,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/EtdCrm.HttpApi.Client.csproj": {
-              "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Client/EtdCrm.HttpApi.Client.csproj"
+            "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Client/EtdCrm.HttpApi.Client.csproj": {
+              "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Client/EtdCrm.HttpApi.Client.csproj"
             }
           }
         }
@@ -9222,7 +9222,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

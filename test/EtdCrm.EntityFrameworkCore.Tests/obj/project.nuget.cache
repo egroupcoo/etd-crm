@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lrd5cTuf7KXqetMlZ4mLzlRytrCqKCw2W50yeQHco9yE4DUnJx3gw4WONF/pWpreT8v7fW2XhtjY/co8C2mzFg==",
+  "dgSpecHash": "skWIici+iEHkIDaSZ86hIFWwZv8BXYzGULfwFq6xNTuIteV8yqDPQC5kdAGdxhhYpXuqhbqa46aoBg5x9Sef8w==",
   "success": true,
-  "projectFilePath": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.EntityFrameworkCore.Tests/EtdCrm.EntityFrameworkCore.Tests.csproj",
+  "projectFilePath": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/EtdCrm.EntityFrameworkCore.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/inanyalcin/.nuget/packages/autofac/6.3.0/autofac.6.3.0.nupkg.sha512",
     "/Users/inanyalcin/.nuget/packages/autofac.extensions.dependencyinjection/7.2.0/autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

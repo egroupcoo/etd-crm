@@ -15315,14 +15315,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Application.Tests/EtdCrm.Application.Tests.csproj",
+      "projectUniqueName": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/EtdCrm.Application.Tests.csproj",
       "projectName": "EtdCrm.Application.Tests",
-      "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Application.Tests/EtdCrm.Application.Tests.csproj",
+      "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/EtdCrm.Application.Tests.csproj",
       "packagesPath": "/Users/inanyalcin/.nuget/packages/",
-      "outputPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Application.Tests/obj/",
+      "outputPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/inanyalcin/Documents/EtdCrm-Backend/NuGet.Config",
+        "/Users/inanyalcin/Documents/EGroup/etd-crm/NuGet.Config",
         "/Users/inanyalcin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -15336,11 +15336,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application/EtdCrm.Application.csproj": {
-              "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application/EtdCrm.Application.csproj"
+            "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/EtdCrm.Application.csproj": {
+              "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/EtdCrm.Application.csproj"
             },
-            "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Domain.Tests/EtdCrm.Domain.Tests.csproj": {
-              "projectPath": "/Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Domain.Tests/EtdCrm.Domain.Tests.csproj"
+            "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Domain.Tests/EtdCrm.Domain.Tests.csproj": {
+              "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Domain.Tests/EtdCrm.Domain.Tests.csproj"
             }
           }
         }
@@ -15375,7 +15375,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

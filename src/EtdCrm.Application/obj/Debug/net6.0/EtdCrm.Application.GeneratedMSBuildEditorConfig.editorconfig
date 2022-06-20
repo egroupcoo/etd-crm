@@ -8,4 +8,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EtdCrm
-build_property.ProjectDir = /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application/
+build_property.ProjectDir = /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/

@@ -60,14 +60,14 @@ public class EtdCrmHttpApiHostModule : AbpModule
         ConfigureBundles();
         ConfigureUrls(configuration);
         ConfigureConventionalControllers();
-        ConfigureAuthentication(context, configuration);
-        //ConfigureAuthenticationEtd(context, configuration);
+        //ConfigureAuthentication(context, configuration);
+        ConfigureAuthenticationEtd(context, configuration);
         ConfigureLocalization();
         ConfigureVirtualFileSystem(context);
         ConfigureCors(context, configuration);
         ConfigureSwaggerServices(context, configuration);
         //ConfigureEtdReplaceService(context);
-        //ConfigureAntiForgery();
+        ConfigureAntiForgery();
     }
 
 

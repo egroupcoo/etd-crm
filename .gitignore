@@ -260,3 +260,7 @@ src/EtdCrm.HttpApi.Host/Logs/*
 src/EtdCrm.DbMigrator/Logs/*
 src/EtdCrm.Blazor.Server/Logs/*
 src/EtdCrm.Blazor.Server.Tiered/Logs/*
+
+*.AssemblyReference.cache
+*.assets.cache
+*.csproj.FileListAbsolute.txt

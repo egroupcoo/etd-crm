@@ -156,7 +156,8 @@ public class EtdCrmDbContext :
             b.Property(a => a.Gender).IsRequired();
             b.Property(a => a.Name).IsRequired();
             b.Property(a => a.Surname).IsRequired();
-            
+            b.HasMany(a => a.Documents).WithOne(b => b.Doctor).HasForeignKey(c => c.DoctorId);
+
             b.Ignore(c => c.ExtraProperties);
             b.ConfigureByConvention();
         });

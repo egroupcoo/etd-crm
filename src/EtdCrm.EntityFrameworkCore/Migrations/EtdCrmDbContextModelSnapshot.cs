@@ -125,6 +125,9 @@ namespace EtdCrm.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("DeletionTime");
 
+                    b.Property<long?>("DoctorId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("ExtraProperties")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("ExtraProperties");
@@ -159,6 +162,8 @@ namespace EtdCrm.Migrations
                         .HasColumnName("TenantId");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DoctorId");
 
                     b.HasIndex("RequestFormTreatmentId");
 
@@ -2629,9 +2634,15 @@ namespace EtdCrm.Migrations
 
             modelBuilder.Entity("EtdCrm.Domain.Etd.Document", b =>
                 {
+                    b.HasOne("EtdCrm.Domain.Etd.Doctor", "Doctor")
+                        .WithMany("Documents")
+                        .HasForeignKey("DoctorId");
+
                     b.HasOne("EtdCrm.Domain.Etd.RequestFormTreatment", "RequestFormTreatment")
                         .WithMany("Documents")
                         .HasForeignKey("RequestFormTreatmentId");
+
+                    b.Navigation("Doctor");
 
                     b.Navigation("RequestFormTreatment");
                 });
@@ -2976,6 +2987,11 @@ namespace EtdCrm.Migrations
                         .HasForeignKey("TenantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("EtdCrm.Domain.Etd.Doctor", b =>
+                {
+                    b.Navigation("Documents");
                 });
 
             modelBuilder.Entity("EtdCrm.Domain.Etd.Document", b =>

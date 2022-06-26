@@ -552,7 +552,6 @@
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Host/obj/Debug/net6.0/EtdCrm.HttpApi.Host.pdb
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Host/obj/Debug/net6.0/EtdCrm.HttpApi.Host.genruntimeconfig.cache
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.HttpApi.Host/obj/Debug/net6.0/ref/EtdCrm.HttpApi.Host.dll
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Host/bin/Debug/net6.0/web.config
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Host/bin/Debug/net6.0/appsettings.Development.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Host/bin/Debug/net6.0/appsettings.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.HttpApi.Host/bin/Debug/net6.0/appsettings.secrets.json

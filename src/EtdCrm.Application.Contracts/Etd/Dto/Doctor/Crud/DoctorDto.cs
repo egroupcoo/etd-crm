@@ -1,4 +1,5 @@
 ﻿using EtdCrm.Etd.Enum;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,5 +18,7 @@ namespace EtdCrm.Etd.Dto.Doctor.Crud
         public DateTime BirthDay { get; set; }
 
         public EnmGender Gender { get; set; }
+
+        public List<IFormFile> Files { get; set; }
     }
 }

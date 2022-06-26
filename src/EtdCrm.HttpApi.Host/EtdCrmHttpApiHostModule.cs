@@ -35,6 +35,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Volo.Abp.Identity;
 using EtdCrm.Admin;
+using EtdCrm.Extension;
 
 namespace EtdCrm;
 
@@ -65,9 +66,10 @@ public class EtdCrmHttpApiHostModule : AbpModule
         ConfigureLocalization();
         ConfigureVirtualFileSystem(context);
         ConfigureCors(context, configuration);
-        ConfigureSwaggerServices(context, configuration);
+        //ConfigureSwaggerServices(context, configuration);
+        ConfigureSwaggerServicesEtd(context, configuration);
         //ConfigureEtdReplaceService(context);
-        ConfigureAntiForgery();
+        //ConfigureAntiForgeryEtd();
     }
 
 
@@ -189,7 +191,7 @@ public class EtdCrmHttpApiHostModule : AbpModule
         context.Services.AddCors(options =>
         {
             options.AddDefaultPolicy(builder =>
-               {
+            {
                 builder
                     .WithOrigins(
                         configuration["App:CorsOrigins"]
@@ -266,7 +268,7 @@ public class EtdCrmHttpApiHostModule : AbpModule
     }
 
 
-        private void ConfigureRefit(ServiceConfigurationContext context)
+    private void ConfigureRefit(ServiceConfigurationContext context)
     {
         //context.Services.AddRefitClient<IYandexDiskService>().ConfigureHttpClient(c => c.BaseAddress = new Uri("http://jsonplaceholder.typicode.com"));
         context.Services.AddRefitClient<IYandexDiskService>();
@@ -274,7 +276,7 @@ public class EtdCrmHttpApiHostModule : AbpModule
 
     }
 
-    private void ConfigureAntiForgery()
+    private void ConfigureAntiForgeryEtd()
     {
         Configure<AbpAntiForgeryOptions>(options =>
         {
@@ -299,6 +301,29 @@ public class EtdCrmHttpApiHostModule : AbpModule
                     ServerCertificateCustomValidationCallback =
                         HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
                 };
+            });
+    }
+
+    private static void ConfigureSwaggerServicesEtd(ServiceConfigurationContext context, IConfiguration configuration)
+    {
+        //Nswag oto create sorunu için yapıldı
+
+        context.Services.AddAbpSwaggerGenWithOAuth(
+            configuration["AuthServer:Authority"],
+            new Dictionary<string, string>
+            {
+                    {"EtdCrm", "EtdCrm API"}
+            },
+            options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "EtdCrm API", Version = "v1" });
+                options.DocInclusionPredicate((docName, description) => true);
+
+                //options.CustomSchemaIds(type => type.FullName);
+                //Etd script generate necssary
+                options.CustomSchemaIds(type => type.FriendlyId().Replace("[", "Of").Replace("]", ""));
+                options.CustomOperationIds(options => $"{options.ActionDescriptor.RouteValues["controller"]}{options.ActionDescriptor.RouteValues["action"]}");
+
             });
     }
 

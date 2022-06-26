@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using EtdCrm.Etd.Enum;
 using Volo.Abp.Domain.Entities.Auditing;
 using Volo.Abp.MultiTenancy;
@@ -17,6 +18,7 @@ namespace EtdCrm.Domain.Etd
 
         public EnmGender Gender { get; set; }
 
+        public ICollection<Document> Documents { get; set; }
     }
 }
 

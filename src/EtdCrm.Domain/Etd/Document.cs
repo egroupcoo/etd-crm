@@ -20,6 +20,10 @@ namespace EtdCrm.Domain.Etd
 
         public RequestFormTreatment RequestFormTreatment { get; set; }
 
+        public long? DoctorId { get; set; }
+
+        public Doctor Doctor { get; set; }
+
     }
 }
 

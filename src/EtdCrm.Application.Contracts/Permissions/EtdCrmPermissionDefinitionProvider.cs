@@ -19,6 +19,15 @@ public class EtdCrmPermissionDefinitionProvider : PermissionDefinitionProvider
         treatmentPermission.AddChild(EtdCrmPermissions.TreatmentList, L("List"));
         #endregion Treatment
 
+        #region Doctor
+        var doctorPermission = myGroup.AddPermission(EtdCrmPermissions.Doctor, L("Doctor"));
+        doctorPermission.AddChild(EtdCrmPermissions.DoctorCreate, L("Create"));
+        doctorPermission.AddChild(EtdCrmPermissions.DoctorUpdate, L("Update"));
+        doctorPermission.AddChild(EtdCrmPermissions.DoctorDelete, L("Delete"));
+        doctorPermission.AddChild(EtdCrmPermissions.DoctorGet, L("Get"));
+        doctorPermission.AddChild(EtdCrmPermissions.DoctorList, L("List"));
+        #endregion Doctor
+
     }
 
     private static LocalizableString L(string name)

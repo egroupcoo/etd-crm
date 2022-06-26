@@ -351,6 +351,8 @@
 /Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.EntityFrameworkCore.Tests/obj/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.pdb
 /Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.EntityFrameworkCore.Tests/obj/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.genruntimeconfig.cache
 /Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.EntityFrameworkCore.Tests/obj/Debug/net6.0/ref/EtdCrm.EntityFrameworkCore.Tests.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EtdCrm.TestBase.deps.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EtdCrm.TestBase.runtimeconfig.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
@@ -395,8 +397,6 @@
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EmptyFiles/sheet/empty.xlsx
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EmptyFiles/slide/empty.odp
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EmptyFiles/slide/empty.pptx
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EtdCrm.TestBase.deps.json
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EtdCrm.TestBase.runtimeconfig.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.deps.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.EntityFrameworkCore.Tests/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.runtimeconfig.json

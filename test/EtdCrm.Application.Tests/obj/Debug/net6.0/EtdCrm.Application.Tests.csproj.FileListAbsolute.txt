@@ -383,6 +383,12 @@
 /Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Application.Tests/obj/Debug/net6.0/EtdCrm.Application.Tests.pdb
 /Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Application.Tests/obj/Debug/net6.0/EtdCrm.Application.Tests.genruntimeconfig.cache
 /Users/inanyalcin/Documents/EtdCrm-Backend/test/EtdCrm.Application.Tests/obj/Debug/net6.0/ref/EtdCrm.Application.Tests.dll
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.Domain.Tests.deps.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.Domain.Tests.runtimeconfig.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.deps.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.runtimeconfig.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.TestBase.deps.json
+/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.TestBase.runtimeconfig.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
@@ -427,12 +433,6 @@
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EmptyFiles/sheet/empty.xlsx
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EmptyFiles/slide/empty.odp
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EmptyFiles/slide/empty.pptx
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.Domain.Tests.deps.json
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.Domain.Tests.runtimeconfig.json
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.deps.json
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.Tests.runtimeconfig.json
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.TestBase.deps.json
-/Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.TestBase.runtimeconfig.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.Application.Tests.deps.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/test/EtdCrm.Application.Tests/bin/Debug/net6.0/EtdCrm.Application.Tests.runtimeconfig.json

@@ -261,4 +261,4 @@ src/EtdCrm.DbMigrator/Logs/*
 src/EtdCrm.Blazor.Server/Logs/*
 src/EtdCrm.Blazor.Server.Tiered/Logs/*
 
-Debug/
+[Dd]ebug/

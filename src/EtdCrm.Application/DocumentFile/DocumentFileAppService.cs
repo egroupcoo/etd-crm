@@ -19,19 +19,36 @@ namespace EtdCrm.DocumentFile
 
         public override async Task<DocumentFileDto> CreateAsync(DocumentFileDto input)
         {
-            var countOrderId  = await Repository.CountAsync();  
-            
-            if (countOrderId == 0) {
+            var countOrderId = await Repository.CountAsync();
+
+            if (countOrderId == 0)
+            {
                 input.OrderId = 1;
-            
-            }else {
+
+            }
+            else
+            {
                 var MaxOrderId = await Repository.MaxAsync(x => x.OrderId);
                 input.OrderId = MaxOrderId + 1;
             }
 
-            
-            
-            return await base.CreateAsync(input);
+            try
+            {
+
+                var entity = base.MapToEntity(input);
+                base.TryToSetTenantId(entity);
+                await Repository.InsertAsync(entity, true);
+
+                return input;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+
+
+
         }
 
         public override Task<DocumentFileDto> UpdateAsync(long id, DocumentFileDto input)

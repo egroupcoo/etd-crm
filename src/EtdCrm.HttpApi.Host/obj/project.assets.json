@@ -4849,7 +4849,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "EtdCrm.Application.Contracts": "1.0.0",
-          "EtdCrm.Domain": "1.0.0",
+          "EtdCrm.EntityFrameworkCore": "1.0.0",
           "Refit": "6.3.2",
           "Refit.HttpClientFactory": "6.3.2",
           "Volo.Abp.Account.Application": "5.1.4",

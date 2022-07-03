@@ -124,8 +124,8 @@
               "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj": {
                 "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj"
               },
-              "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj": {
-                "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj"
+              "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj": {
+                "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj"
               }
             }
           }

@@ -23,8 +23,10 @@
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Application.Contracts.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.Shared.dll
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Application.Contracts.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.pdb
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.Shared.pdb
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.csproj.AssemblyReference.cache
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.GeneratedMSBuildEditorConfig.editorconfig

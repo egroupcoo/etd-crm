@@ -12,11 +12,14 @@ namespace EtdCrm.Etd.Dto.Document.CreateOrUpdate
 
         public long? RequestFormTreatmentId { get; set; }
 
-        public DocumentDto(string name, EnmStorageProvider storageProvider, long? requestFormTreatmentId)
+        public long? DoctorId { get; set; }
+
+        public DocumentDto(string name, EnmStorageProvider storageProvider, long? requestFormTreatmentId, long? doctorId)
         {
             Name = name;
             StorageProvider = storageProvider;
             RequestFormTreatmentId = requestFormTreatmentId;
+            DoctorId = doctorId;
         }
     }
 }

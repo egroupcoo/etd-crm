@@ -6,7 +6,7 @@ using Volo.Abp.MultiTenancy;
 
 namespace EtdCrm.Domain.Etd
 {
-	public class Doctor : FullAuditedAggregateRoot<long>, IMultiTenant
+    public class Doctor : FullAuditedAggregateRoot<long>, IMultiTenant
     {
         public Guid? TenantId { get; set; }
 
@@ -18,7 +18,12 @@ namespace EtdCrm.Domain.Etd
 
         public EnmGender Gender { get; set; }
 
-        public ICollection<Document> Documents { get; set; }
+        public virtual ICollection<Document> Documents { get; set; }
+
+        public void SetTenantId(Guid? tenantId)
+        {
+            TenantId = tenantId;
+        }
     }
 }
 

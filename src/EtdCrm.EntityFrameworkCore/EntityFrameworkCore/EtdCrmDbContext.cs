@@ -1,4 +1,6 @@
-﻿using EtdCrm.Domain.Etd;
+﻿using System.Linq;
+using System.Threading.Tasks;
+using EtdCrm.Domain.Etd;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -64,6 +66,7 @@ public class EtdCrmDbContext :
     public DbSet<Tenant> Tenants { get; set; }
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
+
     #endregion
 
     public EtdCrmDbContext(DbContextOptions<EtdCrmDbContext> options)
@@ -90,7 +93,8 @@ public class EtdCrmDbContext :
 
         #region Etd Entities Configration
 
-        builder.Entity<RequestForm>(b => {
+        builder.Entity<RequestForm>(b =>
+        {
             b.ToTable("EtdRequestForm");
             b.Property(a => a.Status).IsRequired();
             b.Property(a => a.Type).IsRequired();
@@ -100,7 +104,8 @@ public class EtdCrmDbContext :
         });
 
 
-        builder.Entity<RequestFormTreatment>(b => {
+        builder.Entity<RequestFormTreatment>(b =>
+        {
             b.ToTable("EtdRequestFormTreatment");
             b.HasMany(a => a.Documents).WithOne(b => b.RequestFormTreatment).HasForeignKey(c => c.RequestFormTreatmentId);
             b.HasMany(a => a.Notes).WithOne(b => b.RequestFormTreatment).HasForeignKey(c => c.RequestFormTreatmentId);
@@ -113,7 +118,8 @@ public class EtdCrmDbContext :
 
 
 
-        builder.Entity<Domain.Etd.Treatment>(b => {
+        builder.Entity<Domain.Etd.Treatment>(b =>
+        {
             b.ToTable("EtdTreatment");
             b.Property(a => a.Name).HasMaxLength(100).IsRequired();
             b.Property(a => a.OrderId).IsRequired();
@@ -123,7 +129,8 @@ public class EtdCrmDbContext :
             b.ConfigureByConvention();
         });
 
-        builder.Entity<Domain.Etd.TreatmentSub>(b => {
+        builder.Entity<Domain.Etd.TreatmentSub>(b =>
+        {
             b.ToTable("EtdTreatmentSub");
             b.Property(a => a.Name).HasMaxLength(100).IsRequired();
             b.Property(a => a.OrderId).IsRequired();
@@ -133,7 +140,8 @@ public class EtdCrmDbContext :
         });
 
 
-        builder.Entity<Domain.Etd.Document>(b => {
+        builder.Entity<Domain.Etd.Document>(b =>
+        {
             b.ToTable("EtdDocument");
             b.Property(x => x.Name).HasMaxLength(250).IsRequired();
             b.HasMany(b => b.DocumentFiles).WithOne(c => c.Document).HasForeignKey(n => n.DocumentId);
@@ -141,7 +149,8 @@ public class EtdCrmDbContext :
             b.ConfigureByConvention();
         });
 
-        builder.Entity<Domain.Etd.DocumentFile>(b => {
+        builder.Entity<Domain.Etd.DocumentFile>(b =>
+        {
             b.ToTable("EtdDocumentFile");
             b.Property(a => a.UrlPath).IsRequired();
             b.Property(a => a.OrderId).IsRequired();
@@ -150,7 +159,8 @@ public class EtdCrmDbContext :
         });
 
 
-        builder.Entity<Domain.Etd.Doctor>(b => {
+        builder.Entity<Domain.Etd.Doctor>(b =>
+        {
             b.ToTable("EtdDoctor");
             b.Property(a => a.BirthDay).IsRequired();
             b.Property(a => a.Gender).IsRequired();
@@ -163,7 +173,8 @@ public class EtdCrmDbContext :
         });
 
 
-        builder.Entity<Domain.Etd.Note>(b => {
+        builder.Entity<Domain.Etd.Note>(b =>
+        {
             b.ToTable("EtdNote");
             b.Property(x => x.Name).HasMaxLength(250).IsRequired();
             b.HasMany(b => b.NoteSubs).WithOne(c => c.Note).HasForeignKey(n => n.NoteId);
@@ -174,7 +185,8 @@ public class EtdCrmDbContext :
         });
 
 
-        builder.Entity<Domain.Etd.NoteSub>(b => {
+        builder.Entity<Domain.Etd.NoteSub>(b =>
+        {
             b.ToTable("EtdNoteSub");
             b.Property(a => a.Description).IsRequired();
             b.Ignore(c => c.ExtraProperties);

@@ -15,4 +15,7 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)refit/6.3.2/buildTransitive/netstandard2.0/refit.props" Condition="Exists('$(NuGetPackageRoot)refit/6.3.2/buildTransitive/netstandard2.0/refit.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/Users/inanyalcin/.nuget/packages/microsoft.entityframeworkcore.tools/6.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
+  </PropertyGroup>
 </Project>

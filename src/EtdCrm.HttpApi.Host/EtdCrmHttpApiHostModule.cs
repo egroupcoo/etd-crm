@@ -68,6 +68,7 @@ public class EtdCrmHttpApiHostModule : AbpModule
         ConfigureCors(context, configuration);
         //ConfigureSwaggerServices(context, configuration);
         ConfigureSwaggerServicesEtd(context, configuration);
+        ConfigureRefitEtd(context);
         //ConfigureEtdReplaceService(context);
         //ConfigureAntiForgeryEtd();
     }
@@ -268,12 +269,9 @@ public class EtdCrmHttpApiHostModule : AbpModule
     }
 
 
-    private void ConfigureRefit(ServiceConfigurationContext context)
+    private void ConfigureRefitEtd(ServiceConfigurationContext context)
     {
-        //context.Services.AddRefitClient<IYandexDiskService>().ConfigureHttpClient(c => c.BaseAddress = new Uri("http://jsonplaceholder.typicode.com"));
         context.Services.AddRefitClient<IYandexDiskService>();
-
-
     }
 
     private void ConfigureAntiForgeryEtd()

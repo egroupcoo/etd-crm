@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EtdCrm.Domain\EtdCrm.Domain.csproj" />
     <ProjectReference Include="..\EtdCrm.Application.Contracts\EtdCrm.Application.Contracts.csproj" />
+    <ProjectReference Include="..\EtdCrm.EntityFrameworkCore\EtdCrm.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,11 +30,15 @@
     <None Remove="Refit" />
     <None Remove="Refit.HttpClientFactory" />
     <None Remove="Admin\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Document\" />
     <Folder Include="RequestForm\" />
     <Folder Include="DocumentFile\YandexDisk\" />
     <Folder Include="Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Doctor\DoctorAppService %28copy%29.cs" />
   </ItemGroup>
 </Project>

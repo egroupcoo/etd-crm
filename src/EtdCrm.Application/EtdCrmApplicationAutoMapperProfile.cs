@@ -5,6 +5,8 @@ using EtdCrm.Etd.Dto.Treatment.Crud;
 using EtdCrm.Etd.Dto.DocumentFile.Crud;
 using EtdCrm.Etd.Dto.Doctor.Crud;
 using EtdCrm.Etd.Dto.RequestForm.Operation;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace EtdCrm;
 
@@ -23,6 +25,9 @@ public class EtdCrmApplicationAutoMapperProfile : Profile
 
         CreateMap<DoctorDto, Domain.Etd.Doctor>();
         CreateMap<Domain.Etd.Doctor, DoctorDto>();
+        CreateMap<Domain.Etd.Document, GetDoctorDocumentDto>().ForMember(x => x.Files, opt => opt.MapFrom(src => src.DocumentFiles));
+        CreateMap<Domain.Etd.DocumentFile, GetDoctorDocumentFileDto>();
+        CreateMap<Domain.Etd.Doctor, GetDoctorDto>().ForMember(x => x.GetDoctorDocuments, opt => opt.MapFrom(src => src.Documents));
 
         CreateMap<RequestFormDto, Domain.Etd.RequestForm>();
         CreateMap<Domain.Etd.RequestForm, RequestFormDto>();

@@ -124,8 +124,8 @@
               "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj": {
                 "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application.Contracts/EtdCrm.Application.Contracts.csproj"
               },
-              "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj": {
-                "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj"
+              "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj": {
+                "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj"
               }
             }
           }
@@ -362,6 +362,108 @@
               "version": "[5.1.4, )"
             },
             "Volo.Abp.TenantManagement.Domain": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
+        "projectName": "EtdCrm.EntityFrameworkCore",
+        "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/EtdCrm.EntityFrameworkCore.csproj",
+        "packagesPath": "/Users/inanyalcin/.nuget/packages/",
+        "outputPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.EntityFrameworkCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/inanyalcin/Documents/EGroup/etd-crm/NuGet.Config",
+          "/Users/inanyalcin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj": {
+                "projectPath": "/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Domain/EtdCrm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Volo.Abp.AuditLogging.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.BackgroundJobs.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.FeatureManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.IdentityServer.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.SettingManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Volo.Abp.TenantManagement.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.1.4, )"
             }

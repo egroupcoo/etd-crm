@@ -12,6 +12,8 @@ namespace EtdCrm.Domain.Etd
 
         public string Name { get; set; }
 
+        public EnmDocumentType Type { get; set; }
+
         public EnmStorageProvider StorageProvider { get; set; }
 
         public ICollection<DocumentFile> DocumentFiles { get; set; }

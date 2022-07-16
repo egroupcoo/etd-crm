@@ -15,12 +15,14 @@ namespace EtdCrm.Etd.Dto.Doctor.Crud
 
         public EnmGender Gender { get; set; }
 
-        public List<GetDoctorDocumentDto> GetDoctorDocuments { get; set; }
+        public List<GetDoctorDocumentDto> Documents { get; set; }
     }
 
     public class GetDoctorDocumentDto
     {
         public long Id { get; set; }
+        public string Name { get; set; }
+        public EnmDocumentType Type { get; set; }
         public List<GetDoctorDocumentFileDto> Files { get; set; }
     }
 

@@ -12,6 +12,7 @@ namespace EtdCrm.Domain.Etd
         public long DocumentId { get; set; }
 
         public string UrlPath { get; set; }
+        public string FilePath { get; set; }
 
         public int OrderId { get; set; }
 

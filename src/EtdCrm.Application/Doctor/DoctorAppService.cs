@@ -30,48 +30,38 @@ namespace EtdCrm.Doctor
     //[Authorize(EtdCrmPermissions.Doctor)]
     public class DoctorAppService : CrudAppService<Domain.Etd.Doctor, DoctorDto, long, PagedAndSortedResultRequestDto, DoctorDto>, IDoctorAppService
     {
-        private readonly IHostEnvironment _hostEnvironment;
-        private readonly IDocumentAppService _documentAppService;
-        private readonly IDocumentFileAppService _documentFileAppService;
-        private readonly YandexDiskService _yandexDiskService;
 
-        public DoctorAppService(IHostEnvironment hostEnvironment, IRepository<Domain.Etd.Doctor, long> repository,
-                                IDocumentAppService documentAppService, IDocumentFileAppService documentFileAppService,
-                                YandexDiskService yandexDiskService) : base(repository)
+        public DoctorAppService(IRepository<Domain.Etd.Doctor, long> repository) : base(repository)
         {
-
-            _hostEnvironment = hostEnvironment;
-            _documentAppService = documentAppService;
-            _documentFileAppService = documentFileAppService;
-            _yandexDiskService = yandexDiskService;
         }
 
 
         //[Authorize(EtdCrmPermissions.DoctorCreate)]
-        public override async Task<DoctorDto> CreateAsync([FromForm] DoctorDto input)
+        public override async Task<DoctorDto> CreateAsync(DoctorDto input)
         {
-            var environmentName = _hostEnvironment.EnvironmentName;
-
             var doctorEntity = await base.MapToEntityAsync(input);
             base.TryToSetTenantId(doctorEntity);
             await Repository.InsertAsync(doctorEntity, autoSave: true, CancellationToken.None);
-
-            await CreateDocument(environmentName, doctorEntity.Id, input.Files, "Doctor");
 
             return input;
         }
 
 
-        [Authorize(EtdCrmPermissions.DoctorUpdate)]
+        //[Authorize(EtdCrmPermissions.DoctorUpdate)]
         public override Task<DoctorDto> UpdateAsync(long id, DoctorDto input)
         {
             return base.UpdateAsync(id, input);
         }
 
-        [Authorize(EtdCrmPermissions.DoctorDelete)]
+        //[Authorize(EtdCrmPermissions.DoctorDelete)]
         public override Task DeleteAsync(long id)
         {
             return base.DeleteAsync(id);
+        }
+
+        protected override Task<IQueryable<Domain.Etd.Doctor>> CreateFilteredQueryAsync(PagedAndSortedResultRequestDto input)
+        {
+            return base.CreateFilteredQueryAsync(input);
         }
 
 
@@ -89,36 +79,21 @@ namespace EtdCrm.Doctor
 
 
 
-        private async Task CreateDocument(string environmentName, long doctorId, List<IFormFile> files, string operationName)
+        public async Task<List<ListDoctorDto>> GetFullListAsync(int skipCount, int maxResultCount, string searchKeyword)
         {
-            if (files != null && files.Count > 0)
-            {
-                await _yandexDiskService.CreateFolder(environmentName);
-                await _yandexDiskService.CreateFolder($"{environmentName}/{operationName}");
-                await _yandexDiskService.CreateFolder($"{environmentName}/{operationName}/{doctorId}");
-                await _yandexDiskService.CreateFolder($"{environmentName}/{operationName}/{doctorId}/{DateTime.Now.ToString("yyyy-MM-dd")}");
+            var iQueryable = await Repository.GetQueryableAsync();
 
-                foreach (var file in files)
-                {
+            if (!string.IsNullOrEmpty(searchKeyword))
+                iQueryable = iQueryable.Where(x => x.Name.Contains(searchKeyword) || x.Surname.Contains(searchKeyword));
 
-                    var fileName = $"{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}-{file.FileName}";
-                    var filepath = $"{environmentName}/{operationName}/{doctorId}/{DateTime.Now.ToString("yyyy-MM-dd")}";
-                    await _yandexDiskService.UploadFile(filepath, fileName, file.OpenReadStream());
 
-                    var publishUrl = (await _yandexDiskService.PublishUrl(filepath, fileName)).file;
+            var doctorEntity = await iQueryable.Include(x => x.Documents).ThenInclude(y => y.DocumentFiles).Skip(skipCount).Take(maxResultCount).ToListAsync();
 
-                    var document = new DocumentDto(EnmDocumentName.RequestForm.ToString(), EnmStorageProvider.YandexDisk, requestFormTreatmentId: null, doctorId: doctorId);
+            var doctor = ObjectMapper.Map<List<Domain.Etd.Doctor>, List<ListDoctorDto>>(doctorEntity);
 
-                    var entityDocument = await _documentAppService.CreateAsync(document);
-
-                    var documentFile = new DocumentFileDto(entityDocument.Id, publishUrl, files.IndexOf(file), EnmFileExtension.Png);
-
-                    await _documentFileAppService.CreateAsync(documentFile);
-                }
-
-            }
-
+            return doctor;
         }
+
     }
 
 

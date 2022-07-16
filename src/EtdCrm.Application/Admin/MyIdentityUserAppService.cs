@@ -10,6 +10,7 @@ using Volo.Abp.Guids;
 using Volo.Abp.Identity;
 using Volo.Abp.Settings;
 using Volo.Abp.Threading;
+using Volo.Abp.Users;
 
 namespace EtdCrm.Admin
 {
@@ -34,12 +35,13 @@ namespace EtdCrm.Admin
 
         public override Task<PagedResultDto<IdentityUserDto>> GetListAsync(GetIdentityUsersInput input)
         {
+
             //Super Authorize daki sorun için yapıldı eğer connect doğru şekilde yapılırsa yapılmayacak
             //using (CurrentTenant.Change(null))
             //{
-                return base.GetListAsync(input);
+            return base.GetListAsync(input);
             //}
-      
+
         }
 
         public async override Task<IdentityUserDto> CreateAsync(IdentityUserCreateDto input)

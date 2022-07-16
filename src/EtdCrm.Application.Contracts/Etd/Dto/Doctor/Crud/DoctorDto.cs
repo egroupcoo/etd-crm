@@ -17,7 +17,5 @@ namespace EtdCrm.Etd.Dto.Doctor.Crud
         public DateTime BirthDay { get; set; }
 
         public EnmGender Gender { get; set; }
-
-        public List<IFormFile> Files { get; set; }
     }
 }

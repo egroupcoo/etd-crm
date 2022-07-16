@@ -31,6 +31,7 @@
     <None Remove="Etd\Dto\RequestForm\Crud\" />
     <None Remove="Microsoft.AspNetCore.Http" />
     <None Remove="Etd\Dto\DocumentFile\YandexDisk\" />
+    <None Remove="Etd\Dto\ExtendProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Etd\Dto\RequestForm\" />
@@ -38,5 +39,6 @@
     <Folder Include="Etd\Dto\Document\Crud\" />
     <Folder Include="Etd\Dto\RequestForm\Crud\" />
     <Folder Include="Etd\Dto\DocumentFile\YandexDisk\" />
+    <Folder Include="Etd\Dto\ExtendProfile\" />
   </ItemGroup>
 </Project>

@@ -75,6 +75,17 @@ namespace EtdCrm.DocumentFile.YandexDisk
 
         }
 
+        public async Task DeleteFile(string filePath)
+        {
+            var yandexApi = RestService.For<IYandexDiskService>("https://cloud-api.yandex.net");
+
+            var token = "OAuth AQAAAABhH5G7AAfltNGyp6-ZtU60mOqUX3HXrLM";
+
+            await yandexApi.DeleteFile(token, filePath);
+        }
+
+
+
 
 
 

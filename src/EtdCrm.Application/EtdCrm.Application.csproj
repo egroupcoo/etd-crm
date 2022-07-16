@@ -31,12 +31,14 @@
     <None Remove="Refit.HttpClientFactory" />
     <None Remove="Admin\" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="ExtendProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Document\" />
     <Folder Include="RequestForm\" />
     <Folder Include="DocumentFile\YandexDisk\" />
     <Folder Include="Admin\" />
+    <Folder Include="ExtendProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Doctor\DoctorAppService %28copy%29.cs" />

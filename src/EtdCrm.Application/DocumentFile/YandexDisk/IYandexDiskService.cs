@@ -19,6 +19,9 @@ namespace EtdCrm.DocumentFile.YandexDisk
 
         [Get("/v1/disk/resources?path={path}/{file}")]
         Task<PublishUrlResDto> PublishUrl([Header("Authorization")] string authorization, string path, string file);
+
+        [Delete("/v1/disk/resources?path={filePath}&permanently=true")]
+        Task DeleteFile([Header("Authorization")] string authorization, string filePath);
     }
 }
 

@@ -73,11 +73,11 @@ namespace EtdCrm.RequestForm
 
 
 
-                    var document = new DocumentDto(EnmDocumentName.RequestForm.ToString(), EnmStorageProvider.YandexDisk, requestFormTreatment.FirstOrDefault().Id, doctorId: null);
+                    var document = new DocumentDto(EnmDocumentType.RequestForm.ToString(), EnmStorageProvider.YandexDisk, requestFormTreatment.FirstOrDefault().Id, doctorId: null);
 
                     await _documentAppService.CreateAsync(document);
 
-                    var documentFile = new DocumentFileDto(document.Id, "", dto.Files.IndexOf(file), EnmFileExtension.Pdf);
+                    var documentFile = new DocumentFileDto() { DocumentId = document.Id, FileExtension = EnmFileExtension.Pdf, OrderId = dto.Files.IndexOf(file) };
 
                     await _documentFileAppService.CreateAsync(documentFile);
                 }

@@ -38,6 +38,11 @@ public class EtdCrmApplicationAutoMapperProfile : Profile
 
         CreateMap<RequestFormDto, Domain.Etd.RequestForm>();
         CreateMap<Domain.Etd.RequestForm, RequestFormDto>();
+
+
+        CreateMap<Domain.Etd.RequestFormTreatment, RequestFormTreatmentDto>();
+        CreateMap<Domain.Etd.RequestForm, GetRequestFormDto>();
+
         CreateMap<Volo.Abp.Identity.IdentityUser, ExtendProfileDto>();
 
     }

@@ -12,6 +12,7 @@ using EtdCrm.Etd.Dto.RequestForm.Operation;
 using EtdCrm.Etd.Enum;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Uow;
@@ -25,59 +26,61 @@ namespace EtdCrm.RequestForm
         private readonly IRepository<Domain.Etd.Treatment, long> _treatmentRepository;
         private readonly IDocumentAppService _documentAppService;
         private readonly IDocumentFileAppService _documentFileAppService;
-        private readonly YandexDiskService _yandexDiskService;
 
         public RequestFormService(IRepository<Domain.Etd.RequestForm, long> requestFormRepository,
                                   IRepository<Domain.Etd.RequestFormTreatment, long> requestFormreatmentRepository,
-                                    IRepository<Domain.Etd.Treatment, long> treatmentRepository,
-                                  IDocumentAppService documentAppService, IDocumentFileAppService documentFileAppService,
-                                  YandexDiskService yandexDiskService)
+                                  IRepository<Domain.Etd.Treatment, long> treatmentRepository,
+                                  IDocumentAppService documentAppService, IDocumentFileAppService documentFileAppService)
         {
             _requestFormRepository = requestFormRepository;
             _requestFormreatmentRepository = requestFormreatmentRepository;
             _documentAppService = documentAppService;
             _documentFileAppService = documentFileAppService;
-            _yandexDiskService = yandexDiskService;
             _treatmentRepository = treatmentRepository;
         }
 
+        public async Task<GetRequestFormDto> GetFullGetAsync(long id)
+        {
+            var iQueryable = await _requestFormRepository.GetQueryableAsync();
+            var requestFormEntity = await iQueryable.Include(x => x.Treatments).ThenInclude(a => a.Treatment).FirstOrDefaultAsync(x => x.Id == id);
+
+            var requestForm = ObjectMapper.Map<Domain.Etd.RequestForm, GetRequestFormDto>(requestFormEntity);
+
+            return requestForm;
+        }
 
         public async Task<bool> SaveForm([FromForm] RequestFormDto dto)
         {
 
             var requestForm = ObjectMapper.Map<RequestFormDto, Domain.Etd.RequestForm>(dto);
-            requestForm.SetTenantId(CurrentTenant.Id);
-            var test = await _requestFormRepository.InsertAsync(requestForm, autoSave: true);
+            await _requestFormRepository.InsertAsync(requestForm, autoSave: true);
 
 
             if (dto.Treatments.Count == 0)
             {
-                var treatment = _treatmentRepository.FindAsync(x => x.Name == "Unkown");
+                var treatment = await _treatmentRepository.FindAsync(x => x.Name == "Unkown");
                 dto.Treatments = new List<long>() { treatment.Id };
             }
 
-            var requestFormTreatment = dto.Treatments.Select(a => new Domain.Etd.RequestFormTreatment(requestForm.Id, a));
-            await _requestFormreatmentRepository.InsertManyAsync(requestFormTreatment, autoSave: true);
+            var requestFormTreatments = dto.Treatments.Select(a => new Domain.Etd.RequestFormTreatment(requestForm.Id, a)).ToList();
 
+            foreach (var itemRequestFormTreatment in requestFormTreatments)
+            {
+                await _requestFormreatmentRepository.InsertAsync(itemRequestFormTreatment, autoSave: true);
+            }
 
 
             if (dto.Files != null && dto.Files.Count > 0)
             {
+
+                var document = new DocumentDto(EnmDocumentType.RequestForm.ToString(), EnmDocumentType.RequestForm, EnmStorageProvider.YandexDisk, requestFormTreatments.FirstOrDefault().Id, doctorId: null);
+
+                document = await _documentAppService.CreateAsync(document);
+
                 foreach (var file in dto.Files)
                 {
-                    var filepath = $"RequestForm/{DateTime.Now.ToString("yyyy-MM-dd")}";
-                    await _yandexDiskService.CreateFolder(filepath);
-                    await _yandexDiskService.CreateFolder($"{filepath}/{requestForm.Id}");
-                    await _yandexDiskService.UploadFile($"{filepath}/{requestForm.Id}", file.FileName, file.OpenReadStream());
 
-
-
-
-                    var document = new DocumentDto(EnmDocumentType.RequestForm.ToString(), EnmStorageProvider.YandexDisk, requestFormTreatment.FirstOrDefault().Id, doctorId: null);
-
-                    await _documentAppService.CreateAsync(document);
-
-                    var documentFile = new DocumentFileDto() { DocumentId = document.Id, FileExtension = EnmFileExtension.Pdf, OrderId = dto.Files.IndexOf(file) };
+                    var documentFile = new DocumentFileDto() { DocumentId = document.Id, File = file };
 
                     await _documentFileAppService.CreateAsync(documentFile);
                 }
@@ -85,7 +88,7 @@ namespace EtdCrm.RequestForm
             }
 
 
-            return false;
+            return true;
         }
 
 

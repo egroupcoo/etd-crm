@@ -17,11 +17,6 @@
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application/obj/Debug/net6.0/refint/EtdCrm.Application.dll
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.pdb
 /Users/inanyalcin/Documents/EtdCrm-Backend/src/EtdCrm.Application/obj/Debug/net6.0/ref/EtdCrm.Application.dll
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.csproj.AssemblyReference.cache
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.GeneratedMSBuildEditorConfig.editorconfig
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.AssemblyInfoInputs.cache
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.AssemblyInfo.cs
-/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.csproj.CoreCompileInputs.cache
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Application.deps.json
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Application.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Application.pdb
@@ -33,6 +28,11 @@
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.EntityFrameworkCore.pdb
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.pdb
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/bin/Debug/net6.0/EtdCrm.Domain.Shared.pdb
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.csproj.AssemblyReference.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.AssemblyInfoInputs.cache
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.AssemblyInfo.cs
+/Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.csproj.CoreCompileInputs.cache
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.csproj.CopyComplete
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/EtdCrm.Application.dll
 /Users/inanyalcin/Documents/EGroup/etd-crm/src/EtdCrm.Application/obj/Debug/net6.0/refint/EtdCrm.Application.dll

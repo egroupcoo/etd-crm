@@ -30,7 +30,6 @@ namespace EtdCrm.Etd.Dto.Doctor.Crud
     {
         public long Id { get; set; }
         public string UrlPath { get; set; }
-
     }
 }
 

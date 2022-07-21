@@ -7,14 +7,14 @@ using Volo.Abp.MultiTenancy;
 namespace EtdCrm.Domain.Etd
 {
     public class RequestForm : FullAuditedAggregateRoot<long>, IMultiTenant
-	{
+    {
         public Guid? TenantId { get; protected set; }
 
         public EnmRequestFormStatus Status { get; set; }
 
         public EnmRequestFormType Type { get; set; }
 
-        public  string Description { get; set; }
+        public string Description { get; set; }
 
         public string IpAddress { get; set; }
 
@@ -54,7 +54,7 @@ namespace EtdCrm.Domain.Etd
 
         public string Url { get; set; }
 
-
+        public virtual ICollection<RequestFormTreatment> Treatments { get; set; }
 
         protected RequestForm()
         {

@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Http;
 
 namespace EtdCrm.RequestForm
 {
-	public interface IRequestFormService
-	{
-		Task<bool> SaveForm(RequestFormDto dto);
-	}
+    public interface IRequestFormService
+    {
+        Task<bool> SaveForm(RequestFormDto dto);
+        Task<GetRequestFormDto> GetFullGetAsync(long id);
+    }
 }
 

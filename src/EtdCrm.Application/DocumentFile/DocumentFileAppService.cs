@@ -106,10 +106,10 @@ namespace EtdCrm.DocumentFile
         {
             switch (contentType)
             {
-                case "jpg":
-                case "jpeg":
+                case "image/jpg":
+                case "image/jpeg":
                     return EnmFileExtension.Jpg;
-                case "png":
+                case "image/png":
                     return EnmFileExtension.Png;
                 case "doc":
                     return EnmFileExtension.Doc;

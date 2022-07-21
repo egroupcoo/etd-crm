@@ -16,9 +16,10 @@ namespace EtdCrm.Etd.Dto.Document.CreateOrUpdate
 
         public long? DoctorId { get; set; }
 
-        public DocumentDto(string name, EnmStorageProvider storageProvider, long? requestFormTreatmentId, long? doctorId)
+        public DocumentDto(string name, EnmDocumentType type, EnmStorageProvider storageProvider, long? requestFormTreatmentId, long? doctorId)
         {
             Name = name;
+            Type = type;
             StorageProvider = storageProvider;
             RequestFormTreatmentId = requestFormTreatmentId;
             DoctorId = doctorId;
